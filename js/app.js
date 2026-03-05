@@ -171,8 +171,9 @@ const modalOverlay = document.getElementById('modal-overlay');
 const modalClose = document.getElementById('modal-close');
 
 function openModal(product) {
-    const discount = getDiscount(product.price, product.originalPrice);
-    const saved = formatPrice(product.originalPrice - product.price);
+    const hasDiscount = product.originalPrice > product.price;
+    const discount = hasDiscount ? getDiscount(product.price, product.originalPrice) : 0;
+    const saved = hasDiscount ? formatPrice(product.originalPrice - product.price) : '';
 
     document.getElementById('modal-badge').textContent = product.badge;
     document.getElementById('modal-category').textContent = product.category;
@@ -180,10 +181,13 @@ function openModal(product) {
     document.getElementById('modal-image').src = product.image;
     document.getElementById('modal-image').alt = product.name;
     document.getElementById('modal-stars').textContent = buildStars(product.rating);
-    document.getElementById('modal-rating').textContent = `${product.rating} (${product.reviews} reviews)`;
+    document.getElementById('modal-rating').textContent = product.reviews
+        ? `${product.rating} (${product.reviews} reviews)` : 'Made to order';
     document.getElementById('modal-price').textContent = formatPrice(product.price);
-    document.getElementById('modal-original').textContent = formatPrice(product.originalPrice);
-    document.getElementById('modal-save').textContent = `Save ${saved} (${discount}% off)`;
+    document.getElementById('modal-original').textContent = hasDiscount ? formatPrice(product.originalPrice) : '';
+    document.getElementById('modal-original').style.display = hasDiscount ? '' : 'none';
+    document.getElementById('modal-save').textContent = hasDiscount ? `Save ${saved} (${discount}% off)` : '';
+    document.getElementById('modal-save').style.display = hasDiscount ? '' : 'none';
     document.getElementById('modal-description').textContent = product.description;
     document.getElementById('modal-artisan').textContent = product.artisan;
     document.getElementById('modal-material').textContent = product.material;
