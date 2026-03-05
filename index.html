@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>QalaSmith – Authentic Indian Handicrafts</title>
+  <meta name="description" content="Discover handcrafted Indian art — pottery, wooden carvings, silk scarves, and more. Authentic handicrafts made by traditional artisans across India." />
+  <meta name="keywords" content="Indian handicrafts, handmade, pottery, woodcarving, silk scarves, macrame, artisan crafts, buy handicrafts online" />
+  <meta property="og:title" content="QalaSmith – Authentic Indian Handicrafts" />
+  <meta property="og:description" content="Handcrafted with love by master artisans across India." />
+  <meta property="og:type" content="website" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🪔</text></svg>" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<!-- ========================
+     TOAST NOTIFICATION
+======================== -->
+<div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+<!-- ========================
+     NAVBAR
+======================== -->
+<header class="navbar" id="navbar" role="banner">
+  <div class="container nav-inner">
+
+    <a href="#" class="nav-logo" aria-label="QalaSmith Home">
+      <div class="logo-icon">🪔</div>
+      <span>QalaSmith</span>
+    </a>
+
+    <nav class="nav-links" role="navigation" aria-label="Main navigation">
+      <a href="#home">Home</a>
+      <a href="#products">Shop</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="nav-actions">
+      <button class="btn-cart" id="btn-cart" aria-label="Open cart">
+        🛍
+        <span class="cart-badge" id="cart-badge">0</span>
+      </button>
+      <button class="btn-menu" id="btn-menu" aria-label="Open menu" aria-expanded="false">☰</button>
+    </div>
+  </div>
+</header>
+
+<!-- ========================
+     MOBILE NAV DRAWER
+======================== -->
+<div class="nav-overlay" id="nav-overlay" role="presentation"></div>
+
+<nav class="mobile-nav" id="mobile-nav" aria-label="Mobile navigation">
+  <button class="mobile-nav-close" id="mobile-nav-close" aria-label="Close menu">✕</button>
+  <ul>
+    <li><a href="#home">🏠 Home</a></li>
+    <li><a href="#products">🛍 Shop</a></li>
+    <li><a href="#about">🌿 About Us</a></li>
+    <li><a href="#contact">📞 Contact</a></li>
+  </ul>
+</nav>
+
+<!-- ========================
+     HERO SECTION
+======================== -->
+<section class="hero" id="home" aria-label="Hero">
+  <div class="container hero-inner">
+
+    <div class="hero-content">
+      <span class="hero-eyebrow">🌿 Handcrafted With Love</span>
+      <h1 class="hero-title">
+        Discover <em>Authentic</em><br/>
+        Indian Handicrafts
+      </h1>
+      <p class="hero-subtitle">
+        Each piece tells a story of tradition, skill, and artistry. Sourced directly from
+        master artisans across India — bringing heritage to your home.
+      </p>
+      <div class="hero-cta">
+        <button class="btn-primary" id="btn-shop-now">
+          🛒 Shop Collection
+        </button>
+        <a href="#about" class="btn-outline">
+          🌿 Our Story
+        </a>
+      </div>
+      <div class="hero-stats">
+        <div class="hero-stat">
+          <strong>500+</strong>
+          <span>Artisans Supported</span>
+        </div>
+        <div class="hero-stat">
+          <strong>1200+</strong>
+          <span>Happy Customers</span>
+        </div>
+        <div class="hero-stat">
+          <strong>18</strong>
+          <span>States Represented</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-image" aria-hidden="true">
+      <img src="images/products/product3.png"
+           alt="Handcrafted wooden elephant figurine"
+           loading="eager" />
+    </div>
+
+  </div>
+</section>
+
+<!-- ========================
+     PRODUCTS SECTION
+======================== -->
+<section class="section" id="products" aria-label="Product catalog">
+  <div class="container">
+    <div class="section-header">
+      <p class="section-eyebrow">✦ Our Collection</p>
+      <h2 class="section-title">Handpicked Handicrafts</h2>
+      <p class="section-sub">
+        Browse our curated selection of authentic handcrafted items, each made by skilled
+        artisans using traditional techniques.
+      </p>
+    </div>
+
+    <!-- Filter Bar -->
+    <div class="filter-bar" id="filter-bar" role="group" aria-label="Category filters"></div>
+
+    <!-- Product Grid -->
+    <div class="product-grid" id="product-grid" role="list" aria-label="Products"></div>
+  </div>
+</section>
+
+<!-- ========================
+     ABOUT SECTION
+======================== -->
+<section class="section section-alt" id="about" aria-label="About QalaSmith">
+  <div class="container">
+    <div class="about-grid">
+
+      <div class="about-image">
+        <img src="images/products/product2.png"
+             alt="Handwoven bamboo basket by artisan"
+             loading="lazy" />
+      </div>
+
+      <div class="about-content">
+        <p class="section-eyebrow">✦ Our Story</p>
+        <h2 class="section-title" style="text-align:left">
+          Keeping Ancient Crafts Alive
+        </h2>
+        <p>
+          QalaSmith was founded with a simple mission — to bridge the gap between India's
+          incredible artisan communities and customers who value authenticity, quality, and heritage.
+        </p>
+        <p>
+          We work directly with artisans from Rajasthan, Kerala, Assam, Goa, and across India —
+          ensuring fair prices, ethical sourcing, and preserving techniques passed down through generations.
+        </p>
+
+        <ul class="features-list">
+          <li class="feature-item">
+            <div class="feature-icon">🤝</div>
+            <div class="feature-text">
+              <strong>Direct from Artisans</strong>
+              <span>No middlemen — your purchase goes directly to the maker.</span>
+            </div>
+          </li>
+          <li class="feature-item">
+            <div class="feature-icon">🌿</div>
+            <div class="feature-text">
+              <strong>Sustainable Materials</strong>
+              <span>Natural dyes, eco-friendly bamboo, and traditional materials.</span>
+            </div>
+          </li>
+          <li class="feature-item">
+            <div class="feature-icon">📦</div>
+            <div class="feature-text">
+              <strong>Careful Packaging</strong>
+              <span>Each item is hand-wrapped in eco-friendly packaging.</span>
+            </div>
+          </li>
+          <li class="feature-item">
+            <div class="feature-icon">✅</div>
+            <div class="feature-text">
+              <strong>Quality Guaranteed</strong>
+              <span>Every product is quality-checked before dispatch.</span>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ========================
+     CONTACT / ORDER STRIP
+======================== -->
+<section class="contact-strip" id="contact" aria-label="Contact for orders">
+  <div class="container">
+    <h2>Ready to Order?</h2>
+    <p>
+      We don't have online payments yet — reach out to us directly and we'll confirm
+      your order with personalised service!
+    </p>
+    <div class="contact-cards">
+      <div class="contact-card">
+        <span class="icon">📞</span>
+        <div>
+          <strong>Call / WhatsApp</strong>
+          <a href="tel:+919876543210">+91 98765 43210</a>
+        </div>
+      </div>
+      <div class="contact-card">
+        <span class="icon">✉️</span>
+        <div>
+          <strong>Email Us</strong>
+          <a href="mailto:orders@qalasmith.in">orders@qalasmith.in</a>
+        </div>
+      </div>
+      <div class="contact-card">
+        <span class="icon">🕐</span>
+        <div>
+          <strong>Working Hours</strong>
+          <a href="#">Mon – Sat, 10am – 7pm IST</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========================
+     FOOTER
+======================== -->
+<footer class="footer" role="contentinfo">
+  <div class="container">
+    <div class="footer-grid">
+
+      <div class="footer-brand">
+        <div class="logo-wrap">
+          <div class="logo-icon">🪔</div>
+          <span>QalaSmith</span>
+        </div>
+        <p>Bringing authentic Indian handicrafts to homes around the world, one handcrafted piece at a time.</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Shop</h4>
+        <ul>
+          <li><a href="#products">All Products</a></li>
+          <li><a href="#products">Pottery & Ceramics</a></li>
+          <li><a href="#products">Wood Carving</a></li>
+          <li><a href="#products">Textiles</a></li>
+          <li><a href="#products">Macramé Art</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Info</h4>
+        <ul>
+          <li><a href="#about">Our Story</a></li>
+          <li><a href="#contact">How to Order</a></li>
+          <li><a href="#about">Meet the Artisans</a></li>
+          <li><a href="#contact">Shipping Info</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="tel:+919876543210">📞 +91 98765 43210</a></li>
+          <li><a href="mailto:orders@qalasmith.in">✉️ orders@qalasmith.in</a></li>
+          <li><a href="#">🕐 Mon–Sat 10am–7pm</a></li>
+          <li><a href="#">📍 India</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <span>© 2025 QalaSmith. All rights reserved.</span>
+      <span>Made with ❤️ for Indian Artisans</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ========================
+     CART SIDEBAR
+======================== -->
+<aside class="cart-sidebar" id="cart-sidebar" role="complementary" aria-label="Shopping cart">
+  <div class="cart-header">
+    <h3>🛍 Your Cart</h3>
+    <button class="cart-close" id="cart-close" aria-label="Close cart">✕</button>
+  </div>
+  <div class="cart-items" id="cart-items">
+    <div class="cart-empty">
+      <div class="cart-empty-icon">🛒</div>
+      <p>Your cart is empty</p>
+      <small>Click "View &amp; Order" on any product to get started</small>
+    </div>
+  </div>
+  <div class="cart-footer">
+    <div class="cart-total">
+      <span>Total</span>
+      <span id="cart-total-amount">₹0</span>
+    </div>
+    <button class="btn-checkout" id="btn-checkout">
+      📧 Send Order via Email
+    </button>
+    <small style="text-align:center;color:var(--clr-text-muted);font-size:.75rem">
+      Or call us at <a href="tel:+919876543210" style="color:var(--clr-primary)">+91 98765 43210</a>
+    </small>
+  </div>
+</aside>
+
+<!-- ========================
+     PRODUCT DETAIL MODAL
+======================== -->
+<div class="modal-overlay" id="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-name">
+
+  <div class="modal" id="modal">
+    <button class="modal-close" id="modal-close" aria-label="Close product details">✕</button>
+
+    <div class="modal-grid">
+
+      <!-- Image Column -->
+      <div class="modal-image-col">
+        <img id="modal-image" src="" alt="" />
+      </div>
+
+      <!-- Info Column -->
+      <div class="modal-info-col">
+        <div>
+          <span id="modal-badge" class="card-badge" style="position:static;display:inline-block;margin-bottom:.4rem"></span>
+          <p class="modal-category" id="modal-category"></p>
+          <h2 class="modal-name" id="modal-name"></h2>
+        </div>
+
+        <div class="modal-rating">
+          <span class="stars" id="modal-stars"></span>
+          <span id="modal-rating"></span>
+        </div>
+
+        <div class="modal-price-row">
+          <span class="modal-price" id="modal-price"></span>
+          <span class="modal-original" id="modal-original"></span>
+          <span class="modal-save" id="modal-save"></span>
+        </div>
+
+        <p class="modal-description" id="modal-description"></p>
+
+        <div class="modal-meta">
+          <div class="modal-meta-item">
+            <strong>Artisan</strong>
+            <span id="modal-artisan"></span>
+          </div>
+          <div class="modal-meta-item">
+            <strong>Material</strong>
+            <span id="modal-material"></span>
+          </div>
+          <div class="modal-meta-item">
+            <strong>Dimensions</strong>
+            <span id="modal-dimensions"></span>
+          </div>
+        </div>
+
+        <div class="modal-divider"></div>
+
+        <!-- Contact / Order Section -->
+        <div class="modal-contact-section">
+          <h4>📦 How to Order &nbsp;<span id="modal-product-name-contact"></span></h4>
+          <p class="modal-contact-note">
+            We're currently taking orders via <strong>phone / WhatsApp or email</strong>.
+            Reach out and mention the product name, and we'll handle the rest!
+          </p>
+          <div class="modal-contact-info">
+            <div class="contact-info-item">
+              <div class="ci-icon">📞</div>
+              <div>
+                <strong>Call / WhatsApp</strong>
+                <a href="tel:+919876543210">+91 98765 43210</a>
+              </div>
+            </div>
+            <div class="contact-info-item">
+              <div class="ci-icon">✉️</div>
+              <div>
+                <strong>Email</strong>
+                <a href="mailto:orders@qalasmith.in">orders@qalasmith.in</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Add to Cart -->
+        <button class="btn-modal-cart" id="modal-add-cart">
+          🛍 Add to Cart
+        </button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- ========================
+     SCRIPTS
+======================== -->
+<script src="js/products.js"></script>
+<script src="js/app.js"></script>
+
+</body>
+</html>
