@@ -1,393 +1,418 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>QalaSmith – Where Craft Meets Conscious Living</title>
-  <meta name="description" content="Handcrafted planters, placement mats, reclaimed-wood trays, and upcycled diyas. Eco-friendly, made-to-order artistry from India." />
-  <meta name="keywords" content="QalaSmith, upcycled crafts, hand-painted planters, placement mats, reclaimed wood trays, bottle diyas, eco-friendly, handmade India, sustainable decor" />
+  <meta name="description"
+    content="Handcrafted planters, placement mats, reclaimed-wood trays, and upcycled diyas. Eco-friendly, made-to-order artistry from India." />
+  <meta name="keywords"
+    content="QalaSmith, upcycled crafts, hand-painted planters, placement mats, reclaimed wood trays, bottle diyas, eco-friendly, handmade India, sustainable decor" />
   <meta property="og:title" content="QalaSmith – Where Craft Meets Conscious Living" />
-  <meta property="og:description" content="Every piece tells a story — of creativity, sustainability, and the joy of handcrafting. Slow-made, mindful design." />
+  <meta property="og:description"
+    content="Every piece tells a story — of creativity, sustainability, and the joy of handcrafting. Slow-made, mindful design." />
   <meta property="og:type" content="website" />
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🪔</text></svg>" />
+  <link rel="icon"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🪔</text></svg>" />
   <link rel="stylesheet" href="css/style.css" />
 </head>
+
 <body>
 
-<!-- ========================
+  <!-- ========================
      TOAST NOTIFICATION
 ======================== -->
-<div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
 
-<!-- ========================
+  <!-- ========================
      NAVBAR
 ======================== -->
-<header class="navbar" id="navbar" role="banner">
-  <div class="container nav-inner">
+  <header class="navbar" id="navbar" role="banner">
+    <div class="container nav-inner">
 
-    <a href="#" class="nav-logo" aria-label="QalaSmith Home">
-      <div class="logo-icon">🪔</div>
-      <span>QalaSmith</span>
-    </a>
+      <a href="#" class="nav-logo" aria-label="QalaSmith Home">
+        <div class="logo-icon">🪔</div>
+        <span>QalaSmith</span>
+      </a>
 
-    <nav class="nav-links" role="navigation" aria-label="Main navigation">
-      <a href="#home">Home</a>
-      <a href="#products">Shop</a>
-      <a href="#about">About</a>
-      <a href="#contact">Contact</a>
-    </nav>
+      <nav class="nav-links" role="navigation" aria-label="Main navigation">
+        <a href="#home">Home</a>
+        <a href="#products">Shop</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
 
-    <div class="nav-actions">
-      <button class="btn-cart" id="btn-cart" aria-label="Open cart">
-        🛍
-        <span class="cart-badge" id="cart-badge">0</span>
-      </button>
-      <button class="btn-menu" id="btn-menu" aria-label="Open menu" aria-expanded="false">☰</button>
+      <div class="nav-actions">
+        <button class="btn-cart" id="btn-cart" aria-label="Open cart">
+          🛍
+          <span class="cart-badge" id="cart-badge">0</span>
+        </button>
+        <button class="btn-menu" id="btn-menu" aria-label="Open menu" aria-expanded="false">☰</button>
+      </div>
     </div>
-  </div>
-</header>
+  </header>
 
-<!-- ========================
+  <!-- ========================
      MOBILE NAV DRAWER
 ======================== -->
-<div class="nav-overlay" id="nav-overlay" role="presentation"></div>
+  <div class="nav-overlay" id="nav-overlay" role="presentation"></div>
 
-<nav class="mobile-nav" id="mobile-nav" aria-label="Mobile navigation">
-  <button class="mobile-nav-close" id="mobile-nav-close" aria-label="Close menu">✕</button>
-  <ul>
-    <li><a href="#home">🏠 Home</a></li>
-    <li><a href="#products">🛍 Shop</a></li>
-    <li><a href="#about">🌿 About Us</a></li>
-    <li><a href="#contact">📞 Contact</a></li>
-  </ul>
-</nav>
+  <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile navigation">
+    <button class="mobile-nav-close" id="mobile-nav-close" aria-label="Close menu">✕</button>
+    <ul>
+      <li><a href="#home">🏠 Home</a></li>
+      <li><a href="#products">🛍 Shop</a></li>
+      <li><a href="#about">🌿 About Us</a></li>
+      <li><a href="#contact">📞 Contact</a></li>
+    </ul>
+  </nav>
 
-<!-- ========================
+  <!-- ========================
      HERO SECTION
 ======================== -->
-<section class="hero" id="home" aria-label="Hero">
-  <div class="container hero-inner">
+  <section class="hero" id="home" aria-label="Hero">
+    <div class="container hero-inner">
 
-    <div class="hero-content">
-      <span class="hero-eyebrow">🌿 Where Craft Meets Conscious Living</span>
-      <h1 class="hero-title">
-        Every Piece Tells a <em>Story</em>
-      </h1>
-      <p class="hero-subtitle">
-        Of creativity, sustainability, and the sheer joy of handcrafting. We transform everyday
-        materials into charming, functional art — celebrating slow-made, mindful design.
-      </p>
-      <div class="hero-cta">
-        <button class="btn-primary" id="btn-shop-now">
-          🛒 Shop Collection
-        </button>
-        <a href="#about" class="btn-outline">
-          🌿 Our Philosophy
-        </a>
+      <div class="hero-content">
+        <span class="hero-eyebrow">🌿 Where Craft Meets Conscious Living</span>
+        <h1 class="hero-title">
+          Every Piece Tells a <em>Story</em>
+        </h1>
+        <p class="hero-subtitle">
+          Of creativity, sustainability, and the sheer joy of handcrafting. We transform everyday
+          materials into charming, functional art — celebrating slow-made, mindful design.
+        </p>
+        <div class="hero-cta">
+          <button class="btn-primary" id="btn-shop-now">
+            🛒 Shop Collection
+          </button>
+          <a href="#about" class="btn-outline">
+            🌿 Our Philosophy
+          </a>
+        </div>
+        <div class="hero-stats">
+          <div class="hero-stat">
+            <strong>Hand-Painted</strong>
+            <span>Planters &amp; Art</span>
+          </div>
+          <div class="hero-stat">
+            <strong>Upcycled</strong>
+            <span>Reclaimed Wood &amp; Bottles</span>
+          </div>
+          <div class="hero-stat">
+            <strong>Made to Order</strong>
+            <span>Unique Every Time</span>
+          </div>
+        </div>
       </div>
-      <div class="hero-stats">
-        <div class="hero-stat">
-          <strong>Hand-Painted</strong>
-          <span>Planters &amp; Art</span>
-        </div>
-        <div class="hero-stat">
-          <strong>Upcycled</strong>
-          <span>Reclaimed Wood &amp; Bottles</span>
-        </div>
-        <div class="hero-stat">
-          <strong>Made to Order</strong>
-          <span>Unique Every Time</span>
-        </div>
+
+      <div class="hero-image" aria-hidden="true">
+        <img src="images/products/Product19 - Iridescent Blossoms Dining runner and placement mats.jpeg"
+          alt="Iridescent Blossoms dining runner and placement mats" loading="eager" />
       </div>
+
     </div>
+  </section>
 
-    <div class="hero-image" aria-hidden="true">
-      <img src="images/products/Product19 - Iridescent Blossoms Dining runner and placement mats.jpeg"
-           alt="Iridescent Blossoms dining runner and placement mats"
-           loading="eager" />
-    </div>
-
-  </div>
-</section>
-
-<!-- ========================
+  <!-- ========================
      PRODUCTS SECTION
 ======================== -->
-<section class="section" id="products" aria-label="Product catalog">
-  <div class="container">
-    <div class="section-header">
-      <p class="section-eyebrow">✦ Our Collection</p>
-      <h2 class="section-title">What Makes QalaSmith Special</h2>
-      <p class="section-sub">
-        Hand-painted planters, placement mats, reclaimed-wood trays, and bottle diyas — each
-        piece made to order with exclusivity, freshness, and a personal touch.
-      </p>
+  <section class="section" id="products" aria-label="Product catalog">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-eyebrow">✦ Our Collection</p>
+        <h2 class="section-title">What Makes QalaSmith Special</h2>
+        <p class="section-sub">
+          Hand-painted planters, placement mats, reclaimed-wood trays, and bottle diyas — each
+          piece made to order with exclusivity, freshness, and a personal touch.
+        </p>
+      </div>
+
+      <!-- Filter Bar -->
+      <div class="filter-bar" id="filter-bar" role="group" aria-label="Category filters"></div>
+
+      <!-- Product Grid -->
+      <div class="product-grid" id="product-grid" role="list" aria-label="Products"></div>
     </div>
+  </section>
 
-    <!-- Filter Bar -->
-    <div class="filter-bar" id="filter-bar" role="group" aria-label="Category filters"></div>
-
-    <!-- Product Grid -->
-    <div class="product-grid" id="product-grid" role="list" aria-label="Products"></div>
-  </div>
-</section>
-
-<!-- ========================
+  <!-- ========================
      ABOUT SECTION
 ======================== -->
-<section class="section section-alt" id="about" aria-label="About QalaSmith">
-  <div class="container">
-    <div class="about-grid">
+  <section class="section section-alt" id="about" aria-label="About QalaSmith">
+    <div class="container">
+      <div class="about-grid">
 
-      <div class="about-image">
-        <img src="images/products/Product 20 - Trays From reclaimed furniture wood!.jpeg"
-             alt="Trays from reclaimed furniture wood"
-             loading="lazy" />
+        <div class="about-image">
+          <img src="images/products/Product 20 - Trays From reclaimed furniture wood!.jpeg"
+            alt="Trays from reclaimed furniture wood" loading="lazy" />
+        </div>
+
+        <div class="about-content">
+          <p class="section-eyebrow">✦ Our Philosophy</p>
+          <h2 class="section-title" style="text-align:left">
+            Art, Eco-Consciousness &amp; Soul
+          </h2>
+          <p>
+            At QalaSmith, every piece tells a story — of creativity, sustainability, and the sheer joy of handcrafting.
+            Rooted in the spirit of upcycling, we bring together hand-crafted precision, hand-painted artistry, and a
+            deep commitment to eco-friendly practices.
+          </p>
+          <p>
+            Each item is <strong>made to order</strong>, ensuring exclusivity, freshness, and a personal touch in every
+            stroke and shape.
+            We believe in upcycling with intention, crafting with care, and designing with soul — creating with minimum
+            waste and maximum imagination.
+          </p>
+
+          <ul class="features-list">
+            <li class="feature-item">
+              <div class="feature-icon">🪴</div>
+              <div class="feature-text">
+                <strong>Hand-Painted Plastic Planters</strong>
+                <span>Humble plastic containers turned into vibrant planters — no two pieces ever the same.</span>
+              </div>
+            </li>
+            <li class="feature-item">
+              <div class="feature-icon">🍽️</div>
+              <div class="feature-text">
+                <strong>Placement Mats &amp; Dining</strong>
+                <span>Handcrafted mats and runners that add warmth and handcrafted charm to every meal.</span>
+              </div>
+            </li>
+            <li class="feature-item">
+              <div class="feature-icon">🪵</div>
+              <div class="feature-text">
+                <strong>Trays from Reclaimed Wood</strong>
+                <span>Salvaged furniture wood becomes fancy trays and serveware — smooth, sturdy, and rich.</span>
+              </div>
+            </li>
+            <li class="feature-item">
+              <div class="feature-icon">🪔</div>
+              <div class="feature-text">
+                <strong>Bottle Diyas &amp; Upcycled Decor</strong>
+                <span>Empty bottles and cans find new life as decorative diyas and chic home accents.</span>
+              </div>
+            </li>
+          </ul>
+
+          <p class="about-tagline">
+            <strong>Why choose QalaSmith?</strong> Unique made-to-order artistry · Eco-friendly materials · Indian
+            craftsmanship with a modern aesthetic · Giftable, collectible, conversation-worthy pieces. Handmade is
+            heart-made — and sustainable can be stunning.
+          </p>
+        </div>
+
       </div>
-
-      <div class="about-content">
-        <p class="section-eyebrow">✦ Our Philosophy</p>
-        <h2 class="section-title" style="text-align:left">
-          Art, Eco-Consciousness &amp; Soul
-        </h2>
-        <p>
-          At QalaSmith, every piece tells a story — of creativity, sustainability, and the sheer joy of handcrafting.
-          Rooted in the spirit of upcycling, we bring together hand-crafted precision, hand-painted artistry, and a deep commitment to eco-friendly practices.
-        </p>
-        <p>
-          Each item is <strong>made to order</strong>, ensuring exclusivity, freshness, and a personal touch in every stroke and shape.
-          We believe in upcycling with intention, crafting with care, and designing with soul — creating with minimum waste and maximum imagination.
-        </p>
-
-        <ul class="features-list">
-          <li class="feature-item">
-            <div class="feature-icon">🪴</div>
-            <div class="feature-text">
-              <strong>Hand-Painted Plastic Planters</strong>
-              <span>Humble plastic containers turned into vibrant planters — no two pieces ever the same.</span>
-            </div>
-          </li>
-          <li class="feature-item">
-            <div class="feature-icon">🍽️</div>
-            <div class="feature-text">
-              <strong>Placement Mats &amp; Dining</strong>
-              <span>Handcrafted mats and runners that add warmth and handcrafted charm to every meal.</span>
-            </div>
-          </li>
-          <li class="feature-item">
-            <div class="feature-icon">🪵</div>
-            <div class="feature-text">
-              <strong>Trays from Reclaimed Wood</strong>
-              <span>Salvaged furniture wood becomes fancy trays and serveware — smooth, sturdy, and rich.</span>
-            </div>
-          </li>
-          <li class="feature-item">
-            <div class="feature-icon">🪔</div>
-            <div class="feature-text">
-              <strong>Bottle Diyas &amp; Upcycled Decor</strong>
-              <span>Empty bottles and cans find new life as decorative diyas and chic home accents.</span>
-            </div>
-          </li>
-        </ul>
-
-        <p class="about-tagline">
-          <strong>Why choose QalaSmith?</strong> Unique made-to-order artistry · Eco-friendly materials · Indian craftsmanship with a modern aesthetic · Giftable, collectible, conversation-worthy pieces. Handmade is heart-made — and sustainable can be stunning.
-        </p>
-      </div>
-
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- ========================
+  <!-- ========================
      CONTACT / ORDER STRIP
 ======================== -->
-<section class="contact-strip" id="contact" aria-label="Contact for orders">
-  <div class="container">
-    <h2>Ready to Order?</h2>
-    <p>
-      Every piece is made to order. Reach out via phone, WhatsApp, or email — we'll confirm
-      your order with personalised, friendly service. No two pieces are ever the same!
-    </p>
-    <div class="contact-cards">
-      <div class="contact-card">
-        <span class="icon">📞</span>
-        <div>
-          <strong>Call / WhatsApp</strong>
-          <a href="tel:+919766539184">+91 9766 539184</a>
+  <section class="contact-strip" id="contact" aria-label="Contact for orders">
+    <div class="container">
+      <h2>Ready to Order?</h2>
+      <p>
+        Every piece is made to order. Reach out via phone, WhatsApp, or email — we'll confirm
+        your order with personalised, friendly service. No two pieces are ever the same!
+      </p>
+      <div class="contact-cards">
+        <div class="contact-card">
+          <span class="icon">📞</span>
+          <div>
+            <strong>Call</strong>
+            <a href="tel:+919766539184">+91 9766 539184</a>
+          </div>
         </div>
-      </div>
-      <!--<div class="contact-card">
+        <div class="contact-card">
+          <span class="icon">💬</span>
+          <div>
+            <strong>WhatsApp</strong>
+            <a href="https://wa.me/919766539184" target="_blank">+91 9766 539184</a>
+          </div>
+        </div>
+        <!--<div class="contact-card">
         <span class="icon">✉️</span>
         <div>
           <strong>Email Us</strong>
           <a href="mailto:orders@qalasmith.in">orders@qalasmith.in</a>
         </div>
       </div> -->
-      <div class="contact-card">
-        <span class="icon">🕐</span>
-        <div>
-          <strong>Working Hours</strong>
-          <a href="#">Mon – Sat, 10am – 7pm IST</a>
+        <div class="contact-card">
+          <span class="icon">🕐</span>
+          <div>
+            <strong>Working Hours</strong>
+            <a href="#">Mon – Sat, 10am – 7pm IST</a>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- ========================
+  <!-- ========================
      FOOTER
 ======================== -->
-<footer class="footer" role="contentinfo">
-  <div class="container">
-    <div class="footer-grid">
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
 
-      <div class="footer-brand">
-        <div class="logo-wrap">
-          <div class="logo-icon">🪔</div>
-          <span>QalaSmith</span>
+        <div class="footer-brand">
+          <div class="logo-wrap">
+            <div class="logo-icon">🪔</div>
+            <span>QalaSmith</span>
+          </div>
+          <p>Where craft meets conscious living. Hand-painted planters, placement mats, reclaimed-wood trays, and
+            upcycled diyas — made to order with care and soul.</p>
         </div>
-        <p>Where craft meets conscious living. Hand-painted planters, placement mats, reclaimed-wood trays, and upcycled diyas — made to order with care and soul.</p>
+
+        <div class="footer-col">
+          <h4>Shop</h4>
+          <ul>
+            <li><a href="#products">All Products</a></li>
+            <li><a href="#products" data-cat="Hand-Painted Planters">Planters</a></li>
+            <li><a href="#products" data-cat="Placement Mats &amp; Dining">Placement Mats</a></li>
+            <li><a href="#products" data-cat="Trays &amp; Serveware">Trays &amp; Serveware</a></li>
+            <li><a href="#products" data-cat="Bottle Diyas &amp; Decor">Diyas &amp; Decor</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Info</h4>
+          <ul>
+            <li><a href="#about">Our Philosophy</a></li>
+            <li><a href="#contact">How to Order</a></li>
+            <li><a href="#about">Why QalaSmith</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="tel:+919766539184">📞 +91 9766 539184</a></li>
+            <!-- <li><a href="mailto:orders@qalasmith.in">✉️ orders@qalasmith.in</a></li> -->
+            <li><a href="#">🕐 Mon–Sat 10am–7pm</a></li>
+            <li><a href="#">📍 India</a></li>
+          </ul>
+        </div>
+
       </div>
 
-      <div class="footer-col">
-        <h4>Shop</h4>
-        <ul>
-          <li><a href="#products">All Products</a></li>
-          <li><a href="#products" data-cat="Hand-Painted Planters">Planters</a></li>
-          <li><a href="#products" data-cat="Placement Mats &amp; Dining">Placement Mats</a></li>
-          <li><a href="#products" data-cat="Trays &amp; Serveware">Trays &amp; Serveware</a></li>
-          <li><a href="#products" data-cat="Bottle Diyas &amp; Decor">Diyas &amp; Decor</a></li>
-        </ul>
+      <div class="footer-bottom">
+        <span>© 2025 QalaSmith. All rights reserved.</span>
+        <span>Handmade is heart-made · Sustainable can be stunning</span>
       </div>
-
-      <div class="footer-col">
-        <h4>Info</h4>
-        <ul>
-          <li><a href="#about">Our Philosophy</a></li>
-          <li><a href="#contact">How to Order</a></li>
-          <li><a href="#about">Why QalaSmith</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
-
-      <div class="footer-col">
-        <h4>Contact</h4>
-        <ul>
-          <li><a href="tel:+919766539184">📞 +91 9766 539184</a></li>
-          <!-- <li><a href="mailto:orders@qalasmith.in">✉️ orders@qalasmith.in</a></li> -->
-          <li><a href="#">🕐 Mon–Sat 10am–7pm</a></li>
-          <li><a href="#">📍 India</a></li>
-        </ul>
-      </div>
-
     </div>
+  </footer>
 
-    <div class="footer-bottom">
-      <span>© 2025 QalaSmith. All rights reserved.</span>
-      <span>Handmade is heart-made · Sustainable can be stunning</span>
-    </div>
-  </div>
-</footer>
-
-<!-- ========================
+  <!-- ========================
      CART SIDEBAR
 ======================== -->
-<aside class="cart-sidebar" id="cart-sidebar" role="complementary" aria-label="Shopping cart">
-  <div class="cart-header">
-    <h3>🛍 Your Cart</h3>
-    <button class="cart-close" id="cart-close" aria-label="Close cart">✕</button>
-  </div>
-  <div class="cart-items" id="cart-items">
-    <div class="cart-empty">
-      <div class="cart-empty-icon">🛒</div>
-      <p>Your cart is empty</p>
-      <small>Click "View &amp; Order" on any product to get started</small>
+  <aside class="cart-sidebar" id="cart-sidebar" role="complementary" aria-label="Shopping cart">
+    <div class="cart-header">
+      <h3>🛍 Your Cart</h3>
+      <button class="cart-close" id="cart-close" aria-label="Close cart">✕</button>
     </div>
-  </div>
-  <div class="cart-footer">
-    <div class="cart-total">
-      <span>Total</span>
-      <span id="cart-total-amount">₹0</span>
+    <div class="cart-items" id="cart-items">
+      <div class="cart-empty">
+        <div class="cart-empty-icon">🛒</div>
+        <p>Your cart is empty</p>
+        <small>Click "View &amp; Order" on any product to get started</small>
+      </div>
     </div>
-    <button class="btn-checkout" id="btn-checkout">
-      📧 Send Order via Email
-    </button>
-    <small style="text-align:center;color:var(--clr-text-muted);font-size:.75rem">
-      Or call us at <a href="tel:+919766539184" style="color:var(--clr-primary)">+91 9766 539184</a>
-    </small>
-  </div>
-</aside>
+    <div class="cart-footer">
+      <div class="cart-total">
+        <span>Total</span>
+        <span id="cart-total-amount">₹0</span>
+      </div>
+      <button class="btn-checkout" id="btn-checkout">
+        📧 Send Order via Email
+      </button>
+      <small style="text-align:center;color:var(--clr-text-muted);font-size:.75rem">
+        Or call us at <a href="tel:+919766539184" style="color:var(--clr-primary)">+91 9766 539184</a>
+      </small>
+    </div>
+  </aside>
 
-<!-- ========================
+  <!-- ========================
      PRODUCT DETAIL MODAL
 ======================== -->
-<div class="modal-overlay" id="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-name">
+  <div class="modal-overlay" id="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-name">
 
-  <div class="modal" id="modal">
-    <button class="modal-close" id="modal-close" aria-label="Close product details">✕</button>
+    <div class="modal" id="modal">
+      <button class="modal-close" id="modal-close" aria-label="Close product details">✕</button>
 
-    <div class="modal-grid">
+      <div class="modal-grid">
 
-      <!-- Image Column -->
-      <div class="modal-image-col">
-        <img id="modal-image" src="" alt="" />
-      </div>
-
-      <!-- Info Column -->
-      <div class="modal-info-col">
-        <div>
-          <span id="modal-badge" class="card-badge" style="position:static;display:inline-block;margin-bottom:.4rem"></span>
-          <p class="modal-category" id="modal-category"></p>
-          <h2 class="modal-name" id="modal-name"></h2>
+        <!-- Image Column -->
+        <div class="modal-image-col">
+          <img id="modal-image" src="" alt="" />
         </div>
 
-        <div class="modal-rating">
-          <span class="stars" id="modal-stars"></span>
-          <span id="modal-rating"></span>
-        </div>
-
-        <div class="modal-price-row">
-          <span class="modal-price" id="modal-price"></span>
-          <span class="modal-original" id="modal-original"></span>
-          <span class="modal-save" id="modal-save"></span>
-        </div>
-
-        <p class="modal-description" id="modal-description"></p>
-
-        <div class="modal-meta">
-          <div class="modal-meta-item">
-            <strong>Artisan</strong>
-            <span id="modal-artisan"></span>
+        <!-- Info Column -->
+        <div class="modal-info-col">
+          <div>
+            <span id="modal-badge" class="card-badge"
+              style="position:static;display:inline-block;margin-bottom:.4rem"></span>
+            <p class="modal-category" id="modal-category"></p>
+            <h2 class="modal-name" id="modal-name"></h2>
           </div>
-          <div class="modal-meta-item">
-            <strong>Material</strong>
-            <span id="modal-material"></span>
-          </div>
-          <div class="modal-meta-item">
-            <strong>Dimensions</strong>
-            <span id="modal-dimensions"></span>
-          </div>
-        </div>
 
-        <div class="modal-divider"></div>
+          <div class="modal-rating">
+            <span class="stars" id="modal-stars"></span>
+            <span id="modal-rating"></span>
+          </div>
 
-        <!-- Contact / Order Section -->
-        <div class="modal-contact-section">
-          <h4>📦 How to Order &nbsp;<span id="modal-product-name-contact"></span></h4>
-          <p class="modal-contact-note">
-            We're currently taking orders via <strong>phone / WhatsApp or email</strong>.
-            Reach out and mention the product name, and we'll handle the rest!
-          </p>
-          <div class="modal-contact-info">
-            <div class="contact-info-item">
-              <div class="ci-icon">📞</div>
-              <div>
-                <strong>Call / WhatsApp</strong>
-                <a href="tel:+919766539184">+91 9766 539184</a>
-              </div>
+          <div class="modal-price-row">
+            <span class="modal-price" id="modal-price"></span>
+            <span class="modal-original" id="modal-original"></span>
+            <span class="modal-save" id="modal-save"></span>
+          </div>
+
+          <p class="modal-description" id="modal-description"></p>
+
+          <div class="modal-meta">
+            <div class="modal-meta-item">
+              <strong>Artisan</strong>
+              <span id="modal-artisan"></span>
             </div>
-           <!-- <div class="contact-info-item">
+            <div class="modal-meta-item">
+              <strong>Material</strong>
+              <span id="modal-material"></span>
+            </div>
+            <div class="modal-meta-item">
+              <strong>Dimensions</strong>
+              <span id="modal-dimensions"></span>
+            </div>
+          </div>
+
+          <div class="modal-divider"></div>
+
+          <!-- Contact / Order Section -->
+          <div class="modal-contact-section">
+            <h4>📦 How to Order &nbsp;<span id="modal-product-name-contact"></span></h4>
+            <p class="modal-contact-note">
+              We're currently taking orders via <strong>phone / WhatsApp or email</strong>.
+              Reach out and mention the product name, and we'll handle the rest!
+            </p>
+            <div class="modal-contact-info">
+              <div class="contact-info-item">
+                <div class="ci-icon">📞</div>
+                <div>
+                  <strong>Call</strong>
+                  <a href="tel:+919766539184">+91 9766 539184</a>
+                </div>
+              </div>
+              <div class="contact-info-item">
+                <div class="ci-icon">💬</div>
+                <div>
+                  <strong>WhatsApp</strong>
+                  <a href="https://wa.me/919766539184" target="_blank">+91 9766 539184</a>
+                </div>
+              </div>
+              <!-- <div class="contact-info-item">
               <div class="ci-icon">✉️</div>
               <div>
                 <strong>Email</strong>
@@ -397,21 +422,22 @@
           </div>
         </div> -->
 
-        <!-- Add to Cart -->
-        <button class="btn-modal-cart" id="modal-add-cart">
-          🛍 Add to Cart
-        </button>
+              <!-- Add to Cart -->
+              <button class="btn-modal-cart" id="modal-add-cart">
+                🛍 Add to Cart
+              </button>
+            </div>
+
+          </div>
+        </div>
       </div>
 
-    </div>
-  </div>
-</div>
-
-<!-- ========================
+      <!-- ========================
      SCRIPTS
 ======================== -->
-<script src="js/products.js"></script>
-<script src="js/app.js"></script>
+      <script src="js/products.js"></script>
+      <script src="js/app.js"></script>
 
 </body>
+
 </html>
