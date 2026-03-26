@@ -2,8 +2,8 @@
 //  app.js – UI interactions: modal, cart, nav
 // =============================================
 
-const CONTACT_PHONE = '+91 98765 43210';
-const CONTACT_EMAIL = 'orders@qalasmith.in';
+const CONTACT_PHONE = '+91 9766539184';
+//const CONTACT_EMAIL = 'orders@qalasmith.in';
 
 // ---------- Helpers ----------
 function formatPrice(amount) {
@@ -156,13 +156,13 @@ function renderCart() {
 }
 
 // Checkout button — opens mailto since no payment integration
-document.getElementById('btn-checkout').addEventListener('click', () => {
+/*document.getElementById('btn-checkout').addEventListener('click', () => {
     if (cart.length === 0) { showToast('Cart is empty!'); return; }
     const items = cart.map(i => `${i.name} x${i.qty} — ${formatPrice(i.price * i.qty)}`).join('%0A');
     const total = cart.reduce((s, i) => s + i.price * i.qty, 0);
     window.location.href =
         `mailto:${CONTACT_EMAIL}?subject=Order from QalaSmith&body=Hi, I'd like to order:%0A%0A${items}%0A%0ATotal: ${formatPrice(total)}%0A%0APlease confirm availability.`;
-});
+});*/
 
 // =====================
 //  PRODUCT MODAL
