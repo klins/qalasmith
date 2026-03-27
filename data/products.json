@@ -317,7 +317,7 @@
   {
     "id": 22,
     "name": "Cuckoo - Dining Runner & Placement Mats",
-    "category": "Hand-Painted Decor",
+    "category": "Placement Mats & Dining",
     "price": 1800,
     "originalPrice": 1800,
     "description": "Add a splash of colour to your table! Handcrafted placement mats and dining runner with Cuckoo design — warmth, sophistication, and handcrafted charm for everyday dining.",
@@ -328,5 +328,20 @@
     "artisan": "QalaSmith",
     "material": "Fabric, hand-painted / printed",
     "dimensions": "Runner & placement mats set" 
+  },
+  {
+    "id": 23,
+    "name": "Mein Apni Favorite Hu Planter (7–8 Inches)",
+    "category": "Hand-Painted Planters",
+    "price": 165,
+    "originalPrice": 165,
+    "description": "Hand-painted plastic planter, 7–8 inches. Bursting with character — from quirky patterns to elegant motifs, every planter is one of a kind.",
+    "image": "images/products/Product 23 - Mein Apni Fav Hu 1.jpeg",
+    "badge": "Hand-Painted",
+    "rating": 4.7,
+    "reviews": 0,
+    "artisan": "QalaSmith",
+    "material": "Upcycled plastic, waterproof paint",
+    "dimensions": "7–8 inches"
   }
 ]
