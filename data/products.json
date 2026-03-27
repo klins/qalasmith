@@ -11,7 +11,7 @@
     "rating": 4.8,
     "reviews": 0,
     "artisan": "QalaSmith",
-    "material": "Upcycled plastic, acrylic paint",
+    "material": "Upcycled plastic, waterproof paint",
     "dimensions": "Set of 6, 4 inches each"
   },
   {
@@ -26,7 +26,7 @@
     "rating": 4.6,
     "reviews": 0,
     "artisan": "QalaSmith",
-    "material": "Upcycled plastic, acrylic paint",
+    "material": "Upcycled plastic, waterproof paint",
     "dimensions": "Various"
   },
   {
@@ -41,7 +41,7 @@
     "rating": 4.7,
     "reviews": 0,
     "artisan": "QalaSmith",
-    "material": "Upcycled plastic, acrylic paint",
+    "material": "Upcycled plastic, waterproof paint",
     "dimensions": "7–8 inches"
   },
   {
@@ -56,7 +56,7 @@
     "rating": 4.7,
     "reviews": 0,
     "artisan": "QalaSmith",
-    "material": "Upcycled plastic, acrylic paint",
+    "material": "Upcycled plastic, waterproof paint",
     "dimensions": "9–10 inches"
   },
   {
@@ -71,7 +71,7 @@
     "rating": 4.8,
     "reviews": 0,
     "artisan": "QalaSmith",
-    "material": "Upcycled plastic, acrylic paint",
+    "material": "Upcycled plastic, waterproof paint",
     "dimensions": "Pair, 9–10 inches each"
   },
   {
@@ -86,7 +86,7 @@
     "rating": 4.8,
     "reviews": 0,
     "artisan": "QalaSmith",
-    "material": "Upcycled plastic, acrylic paint",
+    "material": "Upcycled plastic, waterproof paint",
     "dimensions": "Pair, 9–10 inches each"
   },
   {
@@ -101,7 +101,7 @@
     "rating": 4.6,
     "reviews": 0,
     "artisan": "QalaSmith",
-    "material": "Upcycled plastic, acrylic paint",
+    "material": "Upcycled plastic, waterproof paint",
     "dimensions": "9–10 inches each"
   },
   {
@@ -116,7 +116,7 @@
     "rating": 4.9,
     "reviews": 0,
     "artisan": "QalaSmith",
-    "material": "Upcycled plastic, acrylic paint",
+    "material": "Upcycled plastic, waterproof paint",
     "dimensions": "Pair, 9–10 inches each"
   },
   {
@@ -131,7 +131,7 @@
     "rating": 4.8,
     "reviews": 0,
     "artisan": "QalaSmith",
-    "material": "Upcycled plastic, acrylic paint",
+    "material": "Upcycled plastic, waterproof paint",
     "dimensions": "Pair, 9–10 inches each"
   },
   {
@@ -146,7 +146,7 @@
     "rating": 4.8,
     "reviews": 0,
     "artisan": "QalaSmith",
-    "material": "Upcycled plastic, acrylic paint",
+    "material": "Upcycled plastic, waterproof paint",
     "dimensions": "Pair, 9–10 inches each"
   },
   {
@@ -161,7 +161,7 @@
     "rating": 4.9,
     "reviews": 0,
     "artisan": "QalaSmith",
-    "material": "Upcycled plastic, acrylic paint",
+    "material": "Upcycled plastic, waterproof paint",
     "dimensions": "Each"
   },
   {
@@ -176,7 +176,7 @@
     "rating": 4.8,
     "reviews": 0,
     "artisan": "QalaSmith",
-    "material": "Upcycled plastic, acrylic paint",
+    "material": "Upcycled plastic, waterproof paint",
     "dimensions": "9–10 inches"
   },
   {
@@ -191,7 +191,7 @@
     "rating": 4.7,
     "reviews": 0,
     "artisan": "QalaSmith",
-    "material": "Upcycled plastic, acrylic paint",
+    "material": "Upcycled plastic, waterproof paint",
     "dimensions": "9–10 inches each"
   },
   {
@@ -221,7 +221,7 @@
     "rating": 4.6,
     "reviews": 0,
     "artisan": "QalaSmith",
-    "material": "Tote bag, acrylic paint",
+    "material": "Tote bag, waterproof paint",
     "dimensions": "One size"
   },
   {
@@ -236,7 +236,7 @@
     "rating": 4.8,
     "reviews": 0,
     "artisan": "QalaSmith",
-    "material": "Upcycled materials, acrylic paint",
+    "material": "Upcycled materials, waterproof paint",
     "dimensions": "Various"
   },
   {
@@ -251,7 +251,7 @@
     "rating": 4.7,
     "reviews": 0,
     "artisan": "QalaSmith",
-    "material": "Upcycled materials, acrylic paint",
+    "material": "Upcycled materials, waterproof paint",
     "dimensions": "Various"
   },
   {
@@ -266,15 +266,15 @@
     "rating": 4.8,
     "reviews": 0,
     "artisan": "QalaSmith",
-    "material": "Upcycled bottle, acrylic paint",
+    "material": "Upcycled bottle, waterproof paint",
     "dimensions": "Bottle diya"
   },
   {
     "id": 19,
     "name": "Iridescent Blossoms Dining Runner & Placement Mats",
     "category": "Placement Mats & Dining",
-    "price": 2100,
-    "originalPrice": 2100,
+    "price": 1800,
+    "originalPrice": 1800,
     "description": "Add a splash of colour to your table! Handcrafted placement mats and dining runner with Iridescent Blossoms design — warmth, sophistication, and handcrafted charm for everyday dining.",
     "image": "images/products/Product19 - Iridescent Blossoms Dining runner and placement mats.jpeg",
     "badge": "Hand-Painted",
@@ -313,5 +313,20 @@
     "artisan": "QalaSmith",
     "material": "Upcycled cane",
     "dimensions": "Multipurpose tokri"
+  },
+  {
+    "id": 22,
+    "name": "Cuckoo - Dining Runner & Placement Mats",
+    "category": "Hand-Painted Decor",
+    "price": 1800,
+    "originalPrice": 1800,
+    "description": "Add a splash of colour to your table! Handcrafted placement mats and dining runner with Cuckoo design — warmth, sophistication, and handcrafted charm for everyday dining.",
+    "image": "images/products/Product22 - Cuckoo - Dining runner and placement mats.jpeg",
+    "badge": "Hand-Painted",
+    "rating": 4.9,
+    "reviews": 0,
+    "artisan": "QalaSmith",
+    "material": "Fabric, hand-painted / printed",
+    "dimensions": "Runner & placement mats set" 
   }
 ]
