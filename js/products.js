@@ -159,6 +159,9 @@ async function initProducts() {
   });
 
   renderProducts(data);
+
+  // Signal to app.js that products are ready (enables hash-based deep links)
+  window.dispatchEvent(new Event('productsReady'));
 }
 
 document.addEventListener('DOMContentLoaded', initProducts);

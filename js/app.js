@@ -201,6 +201,16 @@ function openModal(product) {
         closeModal();
     };
 
+    // Wire Share / Copy Link button
+    const shareBtn = document.getElementById('modal-share-btn');
+    if (shareBtn) {
+        shareBtn.onclick = () => copyProductLink(product.id);
+    }
+
+    // Update URL hash for deep-linking (won't re-trigger hashchange)
+    _suppressHashChange = true;
+    window.location.hash = `product-${product.id}`;
+
     modalOverlay.classList.add('open');
     document.body.style.overflow = 'hidden';
 }
@@ -208,7 +218,63 @@ function openModal(product) {
 function closeModal() {
     modalOverlay.classList.remove('open');
     document.body.style.overflow = '';
+    // Clear hash silently
+    _suppressHashChange = true;
+    history.replaceState(null, '', window.location.pathname + window.location.search);
 }
+
+// =====================
+//  DEEP-LINK / HASH ROUTING
+// =====================
+let _suppressHashChange = false;
+
+function copyProductLink(productId) {
+    const url = `${window.location.origin}${window.location.pathname}#product-${productId}`;
+    if (navigator.clipboard) {
+        navigator.clipboard.writeText(url).then(() => showToast('🔗 Link copied to clipboard!'));
+    } else {
+        // Fallback for older browsers
+        const ta = document.createElement('textarea');
+        ta.value = url;
+        ta.style.position = 'fixed';
+        ta.style.opacity = '0';
+        document.body.appendChild(ta);
+        ta.select();
+        document.execCommand('copy');
+        document.body.removeChild(ta);
+        showToast('🔗 Link copied to clipboard!');
+    }
+}
+
+function openProductFromHash(hash) {
+    const match = hash.match(/^#?product-(\d+)$/);
+    if (!match) return;
+    const productId = +match[1];
+    const product = window.__products && window.__products.find(p => p.id === productId);
+    if (product) {
+        // Scroll products section into view first
+        document.getElementById('products')?.scrollIntoView({ behavior: 'smooth' });
+        openModal(product);
+    }
+}
+
+// Listen for hash changes (e.g. browser back/forward)
+window.addEventListener('hashchange', () => {
+    if (_suppressHashChange) { _suppressHashChange = false; return; }
+    const hash = window.location.hash;
+    if (hash.startsWith('#product-')) {
+        openProductFromHash(hash);
+    } else {
+        // If hash cleared externally, close modal
+        if (modalOverlay.classList.contains('open')) closeModal();
+    }
+});
+
+// Boot-time: open modal if page loaded with a product hash
+window.addEventListener('productsReady', () => {
+    const hash = window.location.hash;
+    if (hash.startsWith('#product-')) openProductFromHash(hash);
+});
 
 modalClose.addEventListener('click', closeModal);
 modalOverlay.addEventListener('click', e => {
