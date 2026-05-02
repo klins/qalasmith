@@ -229,7 +229,7 @@ function closeModal() {
 let _suppressHashChange = false;
 
 function copyProductLink(productId) {
-    const url = `${window.location.origin}${window.location.pathname}#product-${productId}`;
+    const url = `${window.location.origin}/p/${productId}.html`;
     if (navigator.clipboard) {
         navigator.clipboard.writeText(url).then(() => showToast('🔗 Link copied to clipboard!'));
     } else {
