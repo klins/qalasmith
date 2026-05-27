@@ -448,5 +448,51 @@
     "artisan": "QalaSmith",
     "material": "Reclaimed Wood, waterproof paint",
     "dimensions": ""
+  },
+  {
+    "id": 31,
+    "name": "Bloom and Breeze T-Light",
+    "category": "Hand-Painted Decor",
+    "price": 250,
+    "originalPrice": 250,
+    "description": "Sustainability gets stylish. We salvage wood from discarded furniture and craft it into fancy and unique home decor — smooth, sturdy, and aesthetically rich. These pieces don't just serve; they impress",
+    "image": "images/products/Product 31 - Bloom and Breeze T-Light.jpeg",
+    "badge": "Upcycled",
+    "rating": 4.7,
+    "reviews": 0,
+    "artisan": "QalaSmith",
+    "material": "Reclaimed Wood, waterproof paint",
+    "dimensions": ""
+  },
+  {
+    "id": 32,
+    "name": "Colourful Ts",
+    "category": "Hand-Painted Decor",
+    "price": 300,
+    "originalPrice": 300,
+    "description": "Sustainability gets stylish. We salvage wood from discarded furniture and craft it into fancy and unique home decor — smooth, sturdy, and aesthetically rich. These pieces don't just serve; they impress",
+    "image": "images/products/Product 32 - Colourful Ts.jpeg",
+    "badge": "Upcycled",
+    "rating": 4.7,
+    "reviews": 0,
+    "artisan": "QalaSmith",
+    "material": "Reclaimed Wood, waterproof paint",
+    "dimensions": ""
+  },
+  {
+    "id": 33,
+    "name": "Gear Loop Clock",
+    "category": "Hand-Painted Decor",
+    "price": 650,
+    "originalPrice": 650,
+    "description": "Sustainability gets stylish. This piece is created from unused and leftover gears from a Mechanic's workshop",
+    "image": "images/products/Product 33 - Gear Loop Clock.jpeg",
+    "badge": "Upcycled",
+    "rating": 4.7,
+    "reviews": 0,
+    "artisan": "QalaSmith",
+    "material": "Unused Gears, waterproof paint",
+    "dimensions": ""
   }
+  
 ]
